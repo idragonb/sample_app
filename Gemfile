@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+ruby '1.9.3'
+gem 'rails', '4.0.1'
+gem 'carrierwave'
+gem 'railties'
 
 group :development, :test do
   gem 'pg'
@@ -10,9 +13,12 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '3.2.5'
-  gem 'coffee-rails', '3.2.2'
-  gem 'uglifier', '1.2.3'
+	gem 'sass-rails', '4.0.1'
+	gem 'uglifier', '2.1.1'
+	gem 'coffee-rails', '4.0.1'
+#	gem 'jquery-rails', '3.0.4'
+	gem 'turbolinks', '1.1.1'
+	gem 'jbuilder', '1.0.2'
 end
 
 gem 'jquery-rails', '2.0.2'

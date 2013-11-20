@@ -6,8 +6,8 @@
 development:
   adapter: postgresql
   database: testDB
-  username: joe
-  password: joe1234
+  username: postgres
+  password: idragonb
   pool: 5
   timeout: 5000
 
@@ -17,15 +17,15 @@ development:
 test:
   adapter: postgresql
   database: testDB
-  username: joe
-  password: joe1234
+  username: postgres
+  password: idragonb
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
   database: testDB
-  username: joe
-  password: joe1234
+  username: postgres
+  password: idragonb
   pool: 5
   timeout: 5000
