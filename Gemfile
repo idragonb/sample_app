@@ -4,6 +4,8 @@ ruby '1.9.3'
 gem 'rails', '4.0.1'
 gem 'carrierwave'
 gem 'railties'
+gem 'devise', '3.0.0.rc'
+# gem 'strong_parameters'
 
 group :development, :test do
   gem 'pg'

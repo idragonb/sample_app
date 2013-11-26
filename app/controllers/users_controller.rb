@@ -40,7 +40,8 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(params[:user])
+    #@user = User.new(params[:user])
+	@user = User.new(user_params)
 
     respond_to do |format|
       if @user.save
@@ -51,15 +52,17 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PUT /users/1
   # PUT /users/1.json
   def update
-    @user = User.find(params[:id])
+   # @user = User.find(params[:id])
+	@user = User.find (params[:id])
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
+      if  @user.update_attributes(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +82,10 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url }
       format.json { head :no_content }
     end
+  end
+    	private
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :salt, :encrypted_password, :id)
   end
 end

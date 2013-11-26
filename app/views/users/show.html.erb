@@ -9,6 +9,26 @@
   <b>Email:</b>
   <%= @user.email %>
 </p>
+<p>
+  <b>Playground dump:</b>
+ </p>
+<p> 
+	@user.inspect --->
+  <%= @user.inspect %></>
+ </p>
+<p>
+  @user.methods --->
+   <%= @user.methods.sort %>
+</p>
+ </p>
+<p>
+  @user.instance_variables --->
+   <%= @user.instance_variables.sort %>
+</p>
+<p>
+ 
+  All this is written in show.html.erb
+</p>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
