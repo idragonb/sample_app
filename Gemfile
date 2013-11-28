@@ -6,6 +6,7 @@ gem 'carrierwave'
 gem 'railties'
 gem 'devise', '3.0.0.rc'
 # gem 'strong_parameters'
+gem 'capybara'
 
 group :development, :test do
   gem 'pg'
@@ -27,7 +28,7 @@ end
 
 group :test do
 	gem 'selenium-webdriver', '2.35.1'
-	gem 'capybara', '1.1.2'
+#	gem 'capybara', '2.0.2'
 end
 
 group :doc do
