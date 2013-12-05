@@ -8,9 +8,11 @@ gem 'railties'
 gem 'devise', '3.0.0.rc'
 # gem 'strong_parameters'
 gem 'capybara'
+  gem 'pg'
+  	gem 'sass-rails', '4.0.1'
 
 group :development, :test do
-  gem 'pg'
+
   gem 'rspec-rails', '2.13.0'
   gem 'guard-rspec', '2.5.0'
   gem 'spork-rails', '4.0.0'
@@ -41,6 +43,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg'
+
   gem 'rails_12factor', '0.0.2'
 end
