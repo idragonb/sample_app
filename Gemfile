@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 gem 'rails', '4.0.1'
+gem 'bootstrap-sass', '2.3.2.0'
 gem 'carrierwave'
 gem 'railties'
 gem 'devise', '3.0.0.rc'
@@ -11,6 +12,10 @@ gem 'capybara'
 group :development, :test do
   gem 'pg'
   gem 'rspec-rails', '2.13.0'
+  gem 'guard-rspec', '2.5.0'
+  gem 'spork-rails', '4.0.0'
+  gem 'guard-spork', :github => 'guard/guard-spork'
+  gem 'childprocess'
 end
 
 # Gems used only for assets and not required
